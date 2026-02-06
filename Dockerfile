@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
-# Remove default nginx config
-RUN rm /etc/nginx/conf.d/default.conf
+# Remove ALL default nginx configs
+RUN rm -f /etc/nginx/conf.d/*.conf
 
 # Copy pre-built static files
 COPY dist /usr/share/nginx/html
