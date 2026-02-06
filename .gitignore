@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Testing
+coverage
+*.lcov
+.nyc_output
+
+# Production
+build
+.cache
+
+# Workspace specific (keep these out of git)
+memory/
+sessions/
+*.md
+!README.md
+!FEATURES.md
+!DEPLOYMENT.md
+
+# Backend
+backend/node_modules
+backend/.env
+backend/logs
