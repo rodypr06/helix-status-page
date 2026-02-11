@@ -1,0 +1,9 @@
+🚀 API Server running on http://localhost:5175
+📊 Endpoints:
+   GET /api/projects
+   GET /api/subagents
+   GET /api/subagents/:id
+   GET /api/main-session
+   GET /api/queue
+   GET /api/history
+   GET /health

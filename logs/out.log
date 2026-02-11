@@ -1,0 +1,42 @@
+2026-02-10 13:54:26 -06:00: 📁 Serving static files from: /Users/rrabelo/.openclaw/workspace/helix-status-page/dist
+2026-02-10 13:54:26 -06:00: 
+2026-02-10 13:54:26 -06:00: ✅ Helix Command Center API - PRODUCTION MODE
+2026-02-10 13:54:26 -06:00: 📡 Local:   http://localhost:5177
+2026-02-10 13:54:26 -06:00: 🌐 Network: http://192.168.50.19:5177
+2026-02-10 13:54:26 -06:00: 📁 Static:  Serving from dist/
+2026-02-10 13:54:26 -06:00: ⚙️  Mode:    production
+2026-02-10 13:54:26 -06:00: 🔧 PID:     58100
+2026-02-10 13:54:26 -06:00: 
+2026-02-10 13:54:26 -06:00: 📊 Health: http://localhost:5177/health
+2026-02-10 13:54:26 -06:00: 📚 API:    http://localhost:5177/api/subagents
+2026-02-10 13:54:26 -06:00: 
+2026-02-10 13:54:41 -06:00: 
+2026-02-10 13:54:41 -06:00: 🛑 SIGINT received. Starting graceful shutdown...
+2026-02-10 13:54:41 -06:00: ✅ HTTP server closed
+2026-02-10 13:54:42 -06:00: 📁 Serving static files from: /Users/rrabelo/.openclaw/workspace/helix-status-page/dist
+2026-02-10 13:54:42 -06:00: 
+2026-02-10 13:54:42 -06:00: ✅ Helix Command Center API - PRODUCTION MODE
+2026-02-10 13:54:42 -06:00: 📡 Local:   http://localhost:5177
+2026-02-10 13:54:42 -06:00: 🌐 Network: http://192.168.50.19:5177
+2026-02-10 13:54:42 -06:00: 📁 Static:  Serving from dist/
+2026-02-10 13:54:42 -06:00: ⚙️  Mode:    production
+2026-02-10 13:54:42 -06:00: 🔧 PID:     58203
+2026-02-10 13:54:42 -06:00: 
+2026-02-10 13:54:42 -06:00: 📊 Health: http://localhost:5177/health
+2026-02-10 13:54:42 -06:00: 📚 API:    http://localhost:5177/api/subagents
+2026-02-10 13:54:42 -06:00: 
+2026-02-10 13:54:47 -06:00: 
+2026-02-10 13:54:47 -06:00: 🛑 SIGTERM received. Starting graceful shutdown...
+2026-02-10 13:54:47 -06:00: ✅ HTTP server closed
+2026-02-10 13:54:47 -06:00: 📁 Serving static files from: /Users/rrabelo/.openclaw/workspace/helix-status-page/dist
+2026-02-10 13:54:47 -06:00: 
+2026-02-10 13:54:47 -06:00: ✅ Helix Command Center API - PRODUCTION MODE
+2026-02-10 13:54:47 -06:00: 📡 Local:   http://localhost:5177
+2026-02-10 13:54:47 -06:00: 🌐 Network: http://192.168.50.19:5177
+2026-02-10 13:54:47 -06:00: 📁 Static:  Serving from dist/
+2026-02-10 13:54:47 -06:00: ⚙️  Mode:    production
+2026-02-10 13:54:47 -06:00: 🔧 PID:     58255
+2026-02-10 13:54:47 -06:00: 
+2026-02-10 13:54:47 -06:00: 📊 Health: http://localhost:5177/health
+2026-02-10 13:54:47 -06:00: 📚 API:    http://localhost:5177/api/subagents
+2026-02-10 13:54:47 -06:00: 
