@@ -48,6 +48,8 @@ sessions/
 !README.md
 !CLAUDE.md
 !REORGANIZATION_PLAN.md
+!REORGANIZATION_COMPLETE.md
+!DOCUMENTATION_INTEGRATION_COMPLETE.md
 
 # Documentation - keep docs/ in version control (must come after *.md)
 !docs/
