@@ -1,21 +1,20 @@
-<script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import Dashboard from './views/Dashboard.vue'
-import Projects from './views/Projects.vue'
-import Analytics from './views/Analytics.vue'
-import History from './views/History.vue'
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 
-const currentView = ref('dashboard')
+const router = useRouter()
+const route = useRoute()
 const lastUpdated = ref(new Date())
 
 const views = [
-  { id: 'dashboard', label: 'Dashboard', icon: '📊', component: Dashboard },
-  { id: 'projects', label: 'Projects', icon: '🚀', component: Projects },
-  { id: 'analytics', label: 'Analytics', icon: '📈', component: Analytics },
-  { id: 'history', label: 'History', icon: '📜', component: History }
+  { id: 'dashboard', label: 'Dashboard', icon: '📊', path: '/' },
+  { id: 'projects', label: 'Projects', icon: '🚀', path: '/projects' },
+  { id: 'analytics', label: 'Analytics', icon: '📈', path: '/analytics' },
+  { id: 'history', label: 'History', icon: '📜', path: '/history' },
+  { id: 'docs', label: 'Docs', icon: '📚', path: '/docs' }
 ]
 
-let updateInterval
+let updateInterval: NodeJS.Timeout
 
 onMounted(() => {
   updateInterval = setInterval(() => {
@@ -27,9 +26,10 @@ onUnmounted(() => {
   clearInterval(updateInterval)
 })
 
-const currentComponent = computed(() => {
-  return views.find(v => v.id === currentView.value)?.component || Dashboard
-})
+function isActiveRoute(path: string) {
+  if (path === '/') return route.path === '/'
+  return route.path.startsWith(path)
+}
 </script>
 
 <template>
@@ -54,10 +54,10 @@ const currentComponent = computed(() => {
           <button
             v-for="view in views"
             :key="view.id"
-            @click="currentView = view.id"
+            @click="router.push(view.path)"
             :class="[
               'w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200',
-              currentView === view.id
+              isActiveRoute(view.path)
                 ? 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-white border border-cyan-500/30'
                 : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
             ]"
@@ -80,7 +80,7 @@ const currentComponent = computed(() => {
 
       <!-- Main Content -->
       <main class="flex-1 p-4">
-        <component :is="currentComponent" />
+        <router-view />
       </main>
     </div>
   </div>

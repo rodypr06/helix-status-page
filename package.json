@@ -22,6 +22,8 @@
     "vue-chartjs": "^5.3.3"
   },
   "dependencies": {
-    "vue": "^3.5.27"
+    "marked": "^17.0.2",
+    "vue": "^3.5.27",
+    "vue-router": "^5.0.2"
   }
 }
