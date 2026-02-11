@@ -42,11 +42,15 @@ build
 # Workspace specific (keep these out of git)
 memory/
 sessions/
+
+# Ignore markdown files in root except these exceptions
 *.md
 !README.md
-!FEATURES.md
-!DEPLOYMENT.md
 !CLAUDE.md
+!REORGANIZATION_PLAN.md
+
+# Documentation - keep docs/ in version control (must come after *.md)
+!docs/
 
 # Backend
 backend/node_modules
