@@ -46,6 +46,7 @@ sessions/
 !README.md
 !FEATURES.md
 !DEPLOYMENT.md
+!CLAUDE.md
 
 # Backend
 backend/node_modules
