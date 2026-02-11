@@ -22,6 +22,9 @@ const PORT = process.env.PORT || 3000
 app.use(cors())
 app.use(express.json())
 
+// Serve static files from dist folder
+app.use(express.static(path.join(__dirname, '../dist')))
+
 /**
  * Gateway Status Endpoint
  *
@@ -257,6 +260,11 @@ app.get('/api/cron/jobs', (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message })
   }
+})
+
+// Fallback for client-side routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'))
 })
 
 // Start server

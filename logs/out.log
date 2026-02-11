@@ -40,3 +40,6 @@
 2026-02-10 13:54:47 -06:00: 📊 Health: http://localhost:5177/health
 2026-02-10 13:54:47 -06:00: 📚 API:    http://localhost:5177/api/subagents
 2026-02-10 13:54:47 -06:00: 
+2026-02-10 18:36:36 -06:00: 
+2026-02-10 18:36:36 -06:00: 🛑 SIGINT received. Starting graceful shutdown...
+2026-02-10 18:36:36 -06:00: ✅ HTTP server closed
